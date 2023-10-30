@@ -1,0 +1,9 @@
+<%- include('partials/header'); -%>
+<h1><%= title %></h1>
+<p><%= content %></p>
+<form action="/delete" method="post">
+    <div>
+        <button class="btn btn-primary btn-lg delete-button" type="submit" name="deleteTitle" value="<%= title %>">Delete <%= title %></button>
+    </div>
+</form>
+<%- include('partials/footer'); -%>
